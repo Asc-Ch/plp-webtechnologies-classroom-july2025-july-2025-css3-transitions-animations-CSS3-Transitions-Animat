@@ -1,0 +1,35 @@
+/* Button hover effect with transition */
+.fancy-btn {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.5s, transform 0.3s;
+}
+
+.fancy-btn:hover {
+  background-color: orange;
+  transform: scale(1.1);
+}
+
+/* Define an animation for the box */
+.box {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Keyframes for movement */
+@keyframes slideAndFade {
+  0% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(200px); opacity: 0.5; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Class to trigger animation */
+.animate {
+  animation: slideAndFade 2s ease-in-out;
+}
